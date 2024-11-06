@@ -1,17 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-    <meta charset="UTF-8">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>jilliongamuts</title>
     <link rel="icon" href="./logo.png" sizes="fill" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/assets/images/graduation.png" type="image/png">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 </head>
 <body>
-
+<nav>
     <div class='scrollBar'>
         <div class='scroll-drag'></div>
     </div>
@@ -22,11 +40,11 @@
 
                 <div class="col-lg-3 col-6 header__new-left">
                     <a class="header__new-logo" href="/">
-                        <img src="./logo.png" alt="Logo" height="80px" width="100px">
+                        <img src="logo.png" alt="Logo" height="80px" width="100px">
                     </a>
                 </div>
-
-                <div class="col-lg-6 header__new-middle">
+                <i id="menu-close" class="fa-sharp fa-solid fa-xmark"></i>
+                <div class="navigation col-lg-6 header__new-middle">
                     <ul class="new-primary">
                         <li id="menu-item-3011" class="menu-item current-menu-item">
                             <a href="#services" aria-current="page">Services</a>
@@ -45,7 +63,9 @@
             </div>
         </div>
     </div>
-
+    
+    <img src="./menu.png" alt="ham" onclick="myFunction()" id="menu-btn">
+</nav>
 
     <div id="smooth-wrapper">
         <div id="smooth-content">
@@ -582,8 +602,8 @@
                     <div class="mainImg">
 
 
-                        <div class="cards">
-                            <div class="card card01">
+                        <div class="cards row">
+                            <div class=" card card01 col-lg-4 col-sm-6 col-12">
                                 <div class="card-data">
 
                                     <h2 class="packages">Branding Package</h2>
@@ -600,7 +620,7 @@
                                     <button class="subscribe">Subscribe</button>
                                 </div>
                             </div>
-                            <div class="card card02">
+                            <div class="card card02 col-lg-4 col-sm-6 col-12">
                                 <div class="card-data">
 
                                     <h2 class="packages">Basic Website Package</h2>
@@ -617,7 +637,7 @@
                                     <button class="subscribe">Subscribe</button>
                                 </div>
                             </div>
-                            <div class="card card03">
+                            <div class="card card03 col-lg-4 col-sm-6 col-12">
                                 <div class="card-data">
 
                                     <h2 class="packages">Premium Package</h2>
@@ -713,7 +733,7 @@
                                                             d="M22.1525 22H26.6425L28.0897 25.618L25.7648 27.1679C25.4866 27.3534 25.3195 27.6656 25.3195 28C25.322 28.0936 25.3195 28.001 25.3195 28.001L25.3195 28.002L25.3195 28.0043L25.3195 28.0093L25.3197 28.0217C25.3198 28.0309 25.3201 28.0421 25.3205 28.0552C25.3214 28.0814 25.3229 28.1153 25.3256 28.1564C25.3311 28.2385 25.3414 28.3494 25.3608 28.4852C25.3996 28.7565 25.4748 29.1281 25.6208 29.5662C25.9141 30.4459 26.4902 31.5849 27.6124 32.7071C28.7346 33.8293 29.8736 34.4054 30.7533 34.6987C31.1914 34.8447 31.563 34.9199 31.8343 34.9587C31.9701 34.9781 32.081 34.9884 32.1631 34.9939C32.2042 34.9966 32.2381 34.9981 32.2643 34.999C32.2774 34.9994 32.2886 34.9997 32.2978 34.9998L32.3102 35L32.3152 35L32.3175 35L32.3185 35C32.3185 35 32.4301 34.9939 32.3195 35C32.6983 35 33.0445 34.786 33.2139 34.4472L33.8836 33.1078L38.3195 33.8471V38.167C36.2084 38.4723 30.5069 38.7732 26.0266 34.2929C21.5463 29.8126 21.8472 24.1111 22.1525 22ZM27.3931 28.4861L29.1991 27.2821C29.986 26.7575 30.2979 25.7534 29.9466 24.8752L28.4994 21.2572C28.1957 20.4979 27.4603 20 26.6425 20H22.1003C21.1918 20 20.3366 20.6312 20.1874 21.6169C19.8481 23.8595 19.3863 30.481 24.6124 35.7071C29.8385 40.9332 36.46 40.4714 38.7026 40.1321C39.6883 39.9829 40.3195 39.1277 40.3195 38.2192V33.8471C40.3195 32.8694 39.6127 32.0351 38.6483 31.8743L34.2124 31.135C33.3464 30.9907 32.4874 31.4281 32.0948 32.2134L31.7483 32.9064C31.6394 32.8796 31.5178 32.8453 31.3857 32.8013C30.7654 32.5946 29.9044 32.1707 29.0266 31.2929C28.1488 30.4151 27.7249 29.5541 27.5182 28.9338C27.4623 28.7662 27.4221 28.6154 27.3931 28.4861Z"
                                                             fill="#00E2C5" />
                                                     </svg>
-                                                    +91 9662128608
+                                                    +923272096297
                                                 </a>
                                             </li>
                                             <li>
@@ -726,7 +746,7 @@
                                                             d="M20 24C20 22.8954 20.8954 22 22 22H38C39.1046 22 40 22.8954 40 24V36C40 37.1046 39.1046 38 38 38H22C20.8954 38 20 37.1046 20 36V24ZM23.5186 24L30 29.6712L36.4814 24H23.5186ZM38 25.3288L30.6585 31.7526C30.2815 32.0825 29.7185 32.0825 29.3415 31.7526L22 25.3288V36H38V25.3288Z"
                                                             fill="#00E2C5" />
                                                     </svg>
-                                                    ravi@thefinch.design
+                                                    Contact@jilliongamuts.com
                                                 </a>
                                             </li>
                                         </ul>
@@ -792,7 +812,29 @@
 
 
 </body>
+<script>
+const btn = document.getElementById('#menu-btn')
 
+function myFunction() {
+    
+    const nav = document.getElementsByClassName("ul.new-primary")[0]; // Get the first <nav> element
+  if (nav.style.display === "none") {
+    nav.style.display = "block";
+  } else {
+    nav.style.display = "none";
+  }
+}
+
+</script>
+
+<!-- <script>
+    $('#menu-btn').click(function() {
+        $('.header__new-middle ul.new-primary').addClass('header-active');
+    });
+
+    $('#menu-btn').click(function() {
+        $('.header__new-middle ul.new-primary').removeClass('header-active');
+    }); </script> -->
 <script data-optimized="1"
     src="https://thefinch.design/wp-content/litespeed/js/59e8689c6db93b84ba470bbe5475988c.js?ver=c30d4"
     id="the_finch-navigation-js" defer data-deferred="1"></script>
@@ -808,8 +850,10 @@
 <script data-optimized="1"
     src="https://thefinch.design/wp-content/litespeed/js/78ef8aff313a4ff81e4589a62904e2fb.js?ver=7bf50"
     id="wp-shortcode-js" defer data-deferred="1"></script>
-
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ 
 </html>
-<!-- Page optimized by LiteSpeed Cache @2024-10-12 18:25:08 -->
-
-<!-- Page cached by LiteSpeed Cache 6.5.0.1 on 2024-10-12 18:25:07 -->
