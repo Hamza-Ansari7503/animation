@@ -930,12 +930,7 @@ body {
     position: relative
 }
 
-.card {
-    border-radius: 8px 9.5rem 8px 8px;
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: #fff;
-}
+
 
 .card-data {
     display: flex;
@@ -2597,6 +2592,69 @@ ul li {
         margin: 0 0 1.4rem
     }
 }
+@media (max-width: 1024px) {
+    .design-develop__container {
+        max-width: 100%;
+        background: white;
+    }
+    .design-develop__left a:last-child {
+        margin-bottom: 0;
+        display: none;
+    }
+    .design-mob .design-develop__left-bg {
+        z-index: -1;
+        display: none;
+    }
+    .design-develop__left.develop-mob {
+        display: none;
+        z-index: 1;
+    }
+    .inner-masthead .row {
+        padding: 17rem 0 00;
+    }
+    .form-container {
+        background-color: rgb(3, 5, 16);
+        height: 500px;
+        margin-top: -29px;
+        display: flex;
+        justify-content: center;
+        padding: 40rem 0rem 40rem 0px !important;
+        margin-bottom: -3.2rem;
+        align-items: center;
+        font-family: Poppins, sans-serif;
+    }
+    .design-develop__left.develop-mob {
+        display: none !important;
+        z-index: 1;
+    }
+    .design-heading{
+        display: none !important;
+    }
+    
+    
+    .pin-spacer{
+        order: 0;
+        place-self: auto;
+        grid-area: auto;
+        z-index: auto;
+        float: none;
+        flex-shrink: 1;
+        display: none;
+        margin: 0px;
+        inset: auto;
+        position: relative;
+        flex-basis: auto;
+        overflow: visible;
+        box-sizing: border-box;
+        width: 621px;
+        height: 144px;
+        padding: 0px;
+    }
+    
+}
+.col-lg-4.col-12.footer__menu {
+    margin-top: -30px;
+}
 
 @media (min-width:1370px) {
     ul li {
@@ -2607,11 +2665,23 @@ ul li {
         padding: 0 0 0 3.2rem
     }
 }
-
+.bg-light {
+    background-color: #f8f9fa !important;
+    z-index: 1;
+    display: flex;
+}
+.identity{
+    margin-bottom: 51px
+}
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+    height: 54vh;
+    text-align: left;
+}
 ul li:before {
     background: #030510;
     border-radius: 50%;
-    content: " ";
     height: 6px;
     left: 0;
     position: absolute;
@@ -6709,6 +6779,12 @@ img.emoji {
     clear: both;
     content: "";
     display: table
+}
+div#smooth-wrapper {
+    inset: 0px;
+    width: 100%;
+    height: 100%;
+    position: fixed;
 }
 
 .wp-block-post-comments .commentlist {
@@ -12572,48 +12648,14 @@ html :where(.is-position-sticky) {
     background: #005bff
 }
 
-.card {
-    color: #0080BA;
-    margin: 23px auto;
-    padding: 0 .5rem 5rem
-}
 
 span {
     font-weight: bold;
 }
 
-@media (min-width:768px) {
-    .card {
 
-        padding: 3rem 0rem 5rem 0;
-    }
-}
 
-@media (min-width:1370px) {
-    .card {
-        padding: 7.5rem 0
-    }
-}
 
-@media (min-width:1699px) {
-    .card {
-        padding: 10px 0;
-    }
-}
-
-.card .container {
-    overflow: hidden;
-    position: relative
-}
-
-.card .row {
-    position: relative;
-    z-index: 1
-}
-
-.save {
-    font-size: 18px
-}
 
 @media (min-width:1025px) {
     .card .row {
@@ -12920,7 +12962,26 @@ span {
     line-height: 4.6rem;
     margin-bottom: 0
 }
-
+    .card {
+      border: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    li {
+        list-style: none;
+        margin: 1rem 0;
+    }
+    .card-header {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    .price {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
 @media (min-width:1370px) {
     .card__title-cont h2 {
         font-size: 4.2rem;
@@ -12953,17 +13014,8 @@ span {
     background-clip: text
 }
 
-.card__title-cont .card__title-link {
-    color: #fff;
-    display: none;
-    font-size: 2.2rem;
-    font-weight: 400;
-    line-height: 3rem;
-    margin-bottom: 0;
-    opacity: 0;
-    text-transform: capitalize
-}
-
+ 
+ 
 @media (min-width:1025px) {
     .active .card__title-cont .card__title-link {
         display: block;
@@ -13254,15 +13306,18 @@ html body a.card__btn.active {
     padding-top: 5rem
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
     .design-develop__row {
-        padding-bottom: 5rem
+        padding-bottom: 5rem;
+        background: white;
     }
 }
 
 @media (min-width:1025px) {
     .design-develop__row {
-        padding-bottom: 10rem
+        padding-bottom: 10rem;
+        background: white;
+
     }
 }
 

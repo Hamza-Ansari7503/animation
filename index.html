@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,35 +19,26 @@
         <div class='scroll-drag'></div>
     </div>
 
-    <div class="header__new">
-        <div class="container">
-            <div class="row align-items-center">
-
-                <div class="col-lg-3 col-6 header__new-left">
-                    <a class="header__new-logo" href="/">
-                        <img src="./logo.png" alt="Logo" height="80px" width="100px">
-                    </a>
-                </div>
-
-                <div class="col-lg-6 header__new-middle">
-                    <ul class="new-primary">
-                        <li id="menu-item-3011" class="menu-item current-menu-item">
-                            <a href="#services" aria-current="page">Services</a>
-                        </li>
-                        <!-- <li id="menu-item-3010" class="menu-item">
-                            <a href="#portfolio">Portfolio</a>
-                        </li> -->
-                        <li id="menu-item-3008" class="menu-item">
-                            <a href="#about">About Us</a>
-                        </li>
-                        <li id="menu-item-3009" class="menu-item">
-                            <a href="#contact">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="./logo.png"    height="80px" alt="logo"></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mx-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
         </div>
-    </div>
+    </nav>
 
 
     <div id="smooth-wrapper">
@@ -74,7 +68,7 @@
                 <div class=" design-develop" data-design-develop>
                     <div class="container design-develop__container">
                         <div class="row inner">
-                            <div class="col-lg-5">
+                            <div class="col-lg-5 design-heading">
                                 <div class="inner-design">
                                     <div class="design-develop__left">
                                         <div class="design-develop__left-bg"></div>
@@ -109,7 +103,7 @@
 
                                     <div class="col-lg-6 col-md-4 col-sm-6 col-12">
                                         <div class="design-develop__right">
-                                            <a href="https://thefinch.design/ux-design/">
+                                            <a href="#ux-design/">
                                                 <h3 class="design-develop__right-title">User Experience (UX) Design</h3>
                                             </a>
                                             <p>Craft seamless, intuitive, and captivating user journeys fostering brand
@@ -119,7 +113,7 @@
 
                                     <div class="col-lg-6 col-md-4 col-sm-6 col-12">
                                         <div class="design-develop__right">
-                                            <a href="https://thefinch.design/ui-design/">
+                                            <a href="#ui-design/">
                                                 <h3 class="design-develop__right-title">User Interface (UI) Design</h3>
                                             </a>
                                             <p>Engage users with visually stunning, user-friendly, and adaptable
@@ -129,7 +123,7 @@
 
                                     <div class="col-lg-6 col-md-4 col-sm-6 col-12">
                                         <div class="design-develop__right">
-                                            <a href="https://thefinch.design/heuristic-analysis/">
+                                            <a href="#analysis/">
                                                 <h3 class="design-develop__right-title">Heuristic Analysis</h3>
                                             </a>
                                             <p>Identify core usability issues in the user interface design with quick,
@@ -139,7 +133,7 @@
 
                                     <div class="col-lg-6 col-md-4 col-sm-6 col-12">
                                         <div class="design-develop__right">
-                                            <a href="https://thefinch.design/design-audit/">
+                                            <a href="#audit/">
                                                 <h3 class="design-develop__right-title">Design Audit</h3>
                                             </a>
                                             <p>Undertake comprehensive systematic analysis of visual design, UI, and UX
@@ -149,7 +143,7 @@
 
                                     <div class="col-lg-6 col-md-4 col-sm-6 col-12">
                                         <div class="design-develop__right">
-                                            <a href="https://thefinch.design/usability-testing/">
+                                            <a href="#/">
                                                 <h3 class="design-develop__right-title">Usability Testing</h3>
                                             </a>
                                             <p>Highlight product improvement avenues with real users performing rigorous
@@ -159,7 +153,7 @@
 
                                     <div class="col-lg-6 col-md-4 col-sm-6 col-12">
                                         <div class="design-develop__right">
-                                            <a href="https://thefinch.design/ux-research/">
+                                            <a href="#research/">
                                                 <h3 class="design-develop__right-title">UX Research</h3>
                                             </a>
                                             <p>Generate in-depth, data-driven insights into user behavior, needs, and
@@ -169,7 +163,7 @@
 
                                     <div class="col-lg-6 col-md-4 col-sm-6 col-12">
                                         <div class="design-develop__right">
-                                            <a href="https://thefinch.design/digital-branding/">
+                                            <a href="#branding/">
                                                 <h3 class="design-develop__right-title">Digital Branding</h3>
                                             </a>
                                             <p>Skillfully shape your online identity, crafting cohesive, captivating,
@@ -179,7 +173,7 @@
 
                                     <div class="col-lg-6 col-md-4 col-sm-6 col-12">
                                         <div class="design-develop__right">
-                                            <a href="https://thefinch.design/design-system/">
+                                            <a href="#system/">
                                                 <h3 class="design-develop__right-title">Design System</h3>
                                             </a>
                                             <p>Create a design system for a harmonious and cohesive experience across
@@ -189,7 +183,7 @@
 
                                     <div class="col-lg-6 col-md-4 col-sm-6 col-12">
                                         <div class="design-develop__right">
-                                            <a href="https://thefinch.design/interaction-design/">
+                                            <a href="#design/">
                                                 <h3 class="design-develop__right-title">Interaction Design</h3>
                                             </a>
                                             <p>Foster user satisfaction with meaningful, immersive product-user
@@ -199,7 +193,7 @@
 
                                     <div class="col-lg-6 col-md-4 col-sm-6 col-12">
                                         <div class="design-develop__right">
-                                            <a href="https://thefinch.design/digital-prototyping/">
+                                            <a href="#prototyping/">
                                                 <h3 class="design-develop__right-title">Digital Prototyping</h3>
                                             </a>
                                             <p>Build realistic, user-focused, and adaptable mockups with streamlined
@@ -208,9 +202,8 @@
                                     </div>
 
                                     <div class="design-develop__left develop-mob">
-                                        <div class="design-develop__left-bg"></div>
                                         <a id="#develop" href="#develop" class="active">
-                                            <p class="design-develop__develop-title">Deve</p>
+                                            <p class="design-develop__develop-title">Development</p>
                                         </a>
                                     </div>
 
@@ -227,7 +220,7 @@
 
                                         <div class="col-lg-6 col-md-4 col-sm-6 col-12">
                                             <div class="design-develop__right">
-                                                <a href="https://thefinch.design/front-end-development/">
+                                                <a href="#development/">
                                                     <h3 class="design-develop__right-title">Front-End Development</h3>
                                                 </a>
                                                 <p>Masterful frontend development to create visually stunning,
@@ -238,7 +231,7 @@
 
                                         <div class="col-lg-6 col-md-4 col-sm-6 col-12">
                                             <div class="design-develop__right">
-                                                <a href="https://thefinch.design/web-application-development/">
+                                                <a href="#development/">
                                                     <h3 class="design-develop__right-title">Web Application Development
                                                     </h3>
                                                 </a>
@@ -251,7 +244,7 @@
 
                                     <div class="col-lg-6 col-md-4 col-sm-6 col-12">
                                         <div class="design-develop__right">
-                                            <a href="https://thefinch.design/mobile-app-development/">
+                                            <a href="#development/">
                                                 <h3 class="design-develop__right-title">Mobile Application Development
                                                 </h3>
                                             </a>
@@ -262,7 +255,7 @@
 
                                     <div class="col-lg-6 col-md-4 col-sm-6 col-12">
                                         <div class="design-develop__right">
-                                            <a href="https://thefinch.design/custom-application-development/">
+                                            <a href="#development/">
                                                 <h3 class="design-develop__right-title">Custom Application Development
                                                 </h3>
                                             </a>
@@ -273,7 +266,7 @@
 
                                     <div class="col-lg-6 col-md-4 col-sm-6 col-12">
                                         <div class="design-develop__right">
-                                            <a href="https://thefinch.design/saas-implementation/">
+                                            <a href="#implementation/">
                                                 <h3 class="design-develop__right-title">SaaS Implementation</h3>
                                             </a>
                                             <p>Seamless SaaS implementation with user-centric UI/UX, ensuring successful
@@ -283,7 +276,7 @@
 
                                     <div class="col-lg-6 col-md-4 col-sm-6 col-12">
                                         <div class="design-develop__right">
-                                            <a href="https://thefinch.design/cross-platform-application-development/">
+                                            <a href="#development/">
                                                 <h3 class="design-develop__right-title">Cross Platform Applications</h3>
                                             </a>
                                             <p>Unified UI/UX in cross-platform applications by leveraging advanced tools
@@ -578,71 +571,71 @@
                         </div>
                     </div>
                 </div>
-                <div class="mainData">
-                    <div class="mainImg">
-
-
-                        <div class="cards">
-                            <div class="card card01">
-                                <div class="card-data">
-
-                                    <h2 class="packages">Branding Package</h2>
-                                    <h4 class="prices">$250</h4>
-                                    <p class="pkg-data">
-                                        <span>Color Palette:</span> Customized brand colors. <br>
-                                        <span>Logo Design:</span> Unique logo creation. <br>
-                                        <span>Business Card:</span> Professional networking cards. <br>
-                                        <span>Social Media Banners:</span> Engaging designs for online platforms. <br>
-                                        <span>Letterhead:</span> Customized letterhead for official use. <br>
-                                        <span>Stamp Design:</span> Branded stamp for documents. <br>
-                                        <span>Stationery:</span> Complete set for consistent branding. <br>
-                                    </p>
-                                    <button class="subscribe">Subscribe</button>
-                                </div>
-                            </div>
-                            <div class="card card02">
-                                <div class="card-data">
-
-                                    <h2 class="packages">Basic Website Package</h2>
-                                    <h4 class="prices">$500</h4>
-                                    <p class="pkg-data">
-                                        <span>Custom Website Development:</span> <br> Front-end and back-end design.
-                                        <br>
-                                        <span>Content:</span> Provided by the client.
-
-                                        This basic package is perfect for establishing your online presence. <br>
-                                        For additional features or custom requests, <br>
-                                        visitors can contact us via the provided email or link. <br>
-                                    </p>
-                                    <button class="subscribe">Subscribe</button>
-                                </div>
-                            </div>
-                            <div class="card card03">
-                                <div class="card-data">
-
-                                    <h2 class="packages">Premium Package</h2>
-                                    <h4 class="prices">$900 <span class="save">
-                                            (Save $100)
-                                        </span></h4>
-                                    <p class="pkg-data">
-                                        <span>Branding Package:</span><br> Comprehensive branding solutions,
-                                        including color palette,
-                                        logo design, business card,
-                                        social media banners,
-                                        letterhead, stamp,
-                                        and stationery. <br>
-                                        <span>Website Package:</span><br> Custom website development with front-end and
-                                        back-end design (client provides content).
-
-                                        Enjoy a complete branding and website solution at a discounted rate.
-                                    </p>
-                                    <button class="subscribe">Subscribe</button>
-                                </div>
-                            </div>
+                <div class="container-fluid py-5">
+                    <div class="row text-center">
+                      <!-- Branding Package Card -->
+                      <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card">
+                          <div class="card-header text-uppercase text-primary">
+                            Branding Package
+                          </div>
+                          <div class="card-body">
+                            <p class="price">$250</p>
+                            <ul class="list-unstyled">
+                              <li><strong>Includes:</strong></li>
+                              <li>Color Palette: Customized brand colors.</li>
+                              <li>Logo Design: Unique logo creation.</li>
+                              <li>Business Card: Professional networking cards.</li>
+                              <li>Social Media Banners: Engaging designs for online platforms.</li>
+                              <li>Letterhead: Customized letterhead for official use.</li>
+                              <li>Stamp Design: Branded stamp for documents.</li>
+                              <li>Stationery: Complete set for consistent branding.</li>
+                            </ul>
+                            <p class="identity">Establish a cohesive and professional identity for your business.</p>
+                            <a href="#" class="btn btn-danger">Learn More</a>
+                          </div>
                         </div>
+                      </div>
+                  
+                      <!-- Basic Website Package Card -->
+                      <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card">
+                          <div class="card-header text-uppercase text-primary">
+                            Basic Website Package
+                          </div>
+                          <div class="card-body">
+                            <p class="price">$500</p>
+                            <ul class="list-unstyled">
+                              <li><strong>Package Includes:</strong></li>
+                              <li><span>Custom Website Development:</span> Front-end and back-end design.</li>
+                              <li>Content: Text, images, and multimedia elements provided by the client, including any specific branding guidelines or style preferences.</li>
+                            </ul>
+                            <p>This basic package is perfect for establishing your online presence. For additional features or custom requests, visitors can contact us via the provided email or link.</p>
+                            <a href="#" class="btn btn-danger">Learn More</a>
+                          </div>
+                        </div>
+                      </div>
+                  
+                      <!-- Premium Package Card -->
+                      <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card">
+                          <div class="card-header text-uppercase text-primary">
+                            Premium Package
+                          </div>
+                          <div class="card-body">
+                            <p class="price">$900 <small>(Save $100)</small></p>
+                            <ul class="list-unstyled">
+                              <li><strong>Package Includes:</strong></li>
+                              <li>Branding Package: Comprehensive branding solutions, including color palette, logo design, business card, social media banners, letterhead, stamp, and stationery.</li>
+                              <li>Website Package: Custom website development with front-end and back-end design (client provides content).</li>
+                            </ul>
+                            <p class="identity">Enjoy a complete branding and website solution at a discounted rate.</p>
+                            <a href="#" class="btn btn-danger">Learn More</a>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-
-                </div>
+                  </div>
                 <div class="dark-bg img-with-content dark-bg" data-img-with-content>
                     <div class="container" data-zoom-in>
                         <div class="row">
@@ -713,7 +706,7 @@
                                                             d="M22.1525 22H26.6425L28.0897 25.618L25.7648 27.1679C25.4866 27.3534 25.3195 27.6656 25.3195 28C25.322 28.0936 25.3195 28.001 25.3195 28.001L25.3195 28.002L25.3195 28.0043L25.3195 28.0093L25.3197 28.0217C25.3198 28.0309 25.3201 28.0421 25.3205 28.0552C25.3214 28.0814 25.3229 28.1153 25.3256 28.1564C25.3311 28.2385 25.3414 28.3494 25.3608 28.4852C25.3996 28.7565 25.4748 29.1281 25.6208 29.5662C25.9141 30.4459 26.4902 31.5849 27.6124 32.7071C28.7346 33.8293 29.8736 34.4054 30.7533 34.6987C31.1914 34.8447 31.563 34.9199 31.8343 34.9587C31.9701 34.9781 32.081 34.9884 32.1631 34.9939C32.2042 34.9966 32.2381 34.9981 32.2643 34.999C32.2774 34.9994 32.2886 34.9997 32.2978 34.9998L32.3102 35L32.3152 35L32.3175 35L32.3185 35C32.3185 35 32.4301 34.9939 32.3195 35C32.6983 35 33.0445 34.786 33.2139 34.4472L33.8836 33.1078L38.3195 33.8471V38.167C36.2084 38.4723 30.5069 38.7732 26.0266 34.2929C21.5463 29.8126 21.8472 24.1111 22.1525 22ZM27.3931 28.4861L29.1991 27.2821C29.986 26.7575 30.2979 25.7534 29.9466 24.8752L28.4994 21.2572C28.1957 20.4979 27.4603 20 26.6425 20H22.1003C21.1918 20 20.3366 20.6312 20.1874 21.6169C19.8481 23.8595 19.3863 30.481 24.6124 35.7071C29.8385 40.9332 36.46 40.4714 38.7026 40.1321C39.6883 39.9829 40.3195 39.1277 40.3195 38.2192V33.8471C40.3195 32.8694 39.6127 32.0351 38.6483 31.8743L34.2124 31.135C33.3464 30.9907 32.4874 31.4281 32.0948 32.2134L31.7483 32.9064C31.6394 32.8796 31.5178 32.8453 31.3857 32.8013C30.7654 32.5946 29.9044 32.1707 29.0266 31.2929C28.1488 30.4151 27.7249 29.5541 27.5182 28.9338C27.4623 28.7662 27.4221 28.6154 27.3931 28.4861Z"
                                                             fill="#00E2C5" />
                                                     </svg>
-                                                    +91 9662128608
+                                                    +92 3272096297
                                                 </a>
                                             </li>
                                             <li>
@@ -726,55 +719,43 @@
                                                             d="M20 24C20 22.8954 20.8954 22 22 22H38C39.1046 22 40 22.8954 40 24V36C40 37.1046 39.1046 38 38 38H22C20.8954 38 20 37.1046 20 36V24ZM23.5186 24L30 29.6712L36.4814 24H23.5186ZM38 25.3288L30.6585 31.7526C30.2815 32.0825 29.7185 32.0825 29.3415 31.7526L22 25.3288V36H38V25.3288Z"
                                                             fill="#00E2C5" />
                                                     </svg>
-                                                    ravi@thefinch.design
+                                                    Contact@jilliongamuts.com
                                                 </a>
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="col-lg-5 col-12">
-                                        <div class="footer__sing-img-part">
-                                            <div class="footer__sing-img-part-inner">
-                                                <p>Too early to take <br />the first step?</p>
-                                                <img src="https://thefinch.design/wp-content/themes/the-finch/assets/images/arrow.png"
-                                                    alt="" class="footer__arrow-img">
-                                                <img src="https://thefinch.design/wp-content/themes/the-finch/assets/images/arrow-mob.png"
-                                                    alt="" class="footer__arrow-mob-img">
-                                                <img src="https://thefinch.design/wp-content/themes/the-finch/assets/images/sign.png"
-                                                    alt="" class="footer__sign-img">
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                                 <div class="row footer__social-row">
                                     <div class="col-12">
                                         <div class="footer__social">
-                                            <a href="https://www.instagram.com/thefinchdesign/" target="_blank"
+                                            <a href="#design/" target="_blank"
                                                 data-desk="Instagram" data-mob="In"></a>
-                                            <a href="https://dribbble.com/thefinchdesign" target="_blank"
+                                            <a href="#design" target="_blank"
                                                 data-desk="Dribbble" data-mob="Dr"></a>
-                                            <a href="https://www.behance.net/rrbthe1" target="_blank"
+                                            <a href="#rrbthe1" target="_blank"
                                                 data-desk="Behance" data-mob="Be"></a>
-                                            <a href="https://www.linkedin.com/company/thefinch-design-studio/"
+                                            <a href="#design-studio/"
                                                 target="_blank" data-desk="LinkedIn" data-mob="Ln"></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-12 footer__menu">
-                                <div class="row">
-                                    <a href="https://thefinch.design/services/" class="col-12 primary">
+                                <div class="row my-5">
+                                    <a href="#" class="col-12 primary">
                                         <h3><span>Our Services</span><span class="hover">Our Services</span></h3>
                                     </a>
-                                    <a href="https://thefinch.design/solutions/" class="col-12 secondary">
+                                    <a href="#solution" class="col-12 secondary">
                                         <h3><span>Our Solutions</span><span class="hover">Our Solutions</span></h3>
                                     </a>
-                                    <a href="https://thefinch.design/our-portfolio/" class="col-12 warning">
+                                    <a href="#portfolio" class="col-12 warning">
                                         <h3><span>Our Portfolio</span><span class="hover">Our Portfolio</span></h3>
                                     </a>
-                                    <a href="https://thefinch.design/about-us/" class="col-12 gray">
+                                    <a href="about" class="col-12 gray">
                                         <h3><span>About Us</span><span class="hover">About Us</span></h3>
                                     </a>
-                                    <a href="https://thefinch.design/contact-us/" class="col-12 dark">
+                                    <a href="#contact" class="col-12 dark">
                                         <h3><span>Contact Us</span><span class="hover">Contact Us</span></h3>
                                     </a>
                                 </div>
@@ -808,7 +789,10 @@
 <script data-optimized="1"
     src="https://thefinch.design/wp-content/litespeed/js/78ef8aff313a4ff81e4589a62904e2fb.js?ver=7bf50"
     id="wp-shortcode-js" defer data-deferred="1"></script>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ 
 </html>
 <!-- Page optimized by LiteSpeed Cache @2024-10-12 18:25:08 -->
 
