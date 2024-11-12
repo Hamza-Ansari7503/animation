@@ -4,10 +4,14 @@
     position: relative;
     width: 100%;
     z-index: 1
+}html, body {
+  height: 100vh !important;
+  overflow-y: scroll; /* Force scrollbar to appear */
+  -webkit-overflow-scrolling: touch; /* iOS smooth scrolling */
 }
 
+
 .owl-carousel .owl-stage {
-    -moz-backface-visibility: hidden;
     position: relative;
     touch-action: manipulation
 }
@@ -24,23 +28,12 @@
 .owl-carousel .owl-stage-outer {
     overflow: hidden;
     position: relative;
-    -webkit-transform: translateZ(0)
 }
 
-.owl-carousel .owl-item,
-.owl-carousel .owl-wrapper {
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    -webkit-transform: translateZ(0);
-    -moz-transform: translateZ(0);
-    -ms-transform: translateZ(0)
-}
 
 .owl-carousel .owl-item {
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
-    -webkit-backface-visibility: hidden;
     float: left;
     min-height: 1px;
     position: relative
@@ -168,7 +161,6 @@
 }
 
 .owl-carousel .owl-video-play-icon {
-    -webkit-backface-visibility: hidden;
     background: url(/wp-content/themes/the-finch/owl.video.play.png) no-repeat;
     cursor: pointer;
     height: 80px;
@@ -224,7 +216,6 @@
 }
 
 .mfp-wrap {
-    -webkit-backface-visibility: hidden;
     outline: none !important;
     z-index: 1043
 }
@@ -328,7 +319,6 @@
 
 button.mfp-arrow,
 button.mfp-close {
-    -webkit-appearance: none;
     background: 0 0;
     border: 0;
     box-shadow: none;
@@ -2496,7 +2486,33 @@ h6 strong {
     font-size: 25px;
     font-weight: bold;
 }
-
+html, body {
+    overflow-y: auto; /* Ensure vertical scrolling is enabled */
+    overflow-x: hidden; /* Disable horizontal scrolling if needed */
+    -webkit-overflow-scrolling: touch; /* Enable momentum scrolling on iOS */
+  }
+/* These styles would hide the scrollbar */
+html, body {
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  ::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+/* Scrollbar styling for WebKit browsers */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: lightgrey;
+  }
+      
 
 @media (min-width:1370px) {
     p {
@@ -2977,8 +2993,7 @@ section {
 
 .alignright {
     display: inline;
-    float: right;
-    margin-left: 1.5em
+     margin-left: 1.5em
 }
 
 .aligncenter {
@@ -3190,8 +3205,7 @@ body.inquiry-page .scrollBar {
 
 @media (min-width:1025px) {
     .header {
-        float: right;
-        margin: 2.5rem 3rem 0 0;
+             margin: 2.5rem 3rem 0 0;
         width: 60px
     }
 }
@@ -3912,8 +3926,7 @@ body.inquiry-page .scrollBar {
 }
 
 .header__main-menu-wrapper {
-    float: right;
-    position: relative;
+     position: relative;
     transition: all .5s linear;
     width: 100%
 }
@@ -3999,14 +4012,12 @@ body.inquiry-page .scrollBar {
 @media (min-width:1025px) {
     .header__logo-cont {
         display: flex;
-        float: right;
-        justify-content: flex-end;
+             justify-content: flex-end;
         padding: 0
     }
 
     .header__logo-cont>a:first-child {
         display: inline-block;
-        float: left;
         height: 60px;
         width: 105px
     }
@@ -4050,8 +4061,7 @@ body.inquiry-page .scrollBar {
 @media (min-width:1025px) {
     .header__burger-cont {
         border-left: 1px solid hsla(197, 3%, 45%, .3);
-        float: right;
-        height: 50px;
+             height: 50px;
         margin-left: 30px;
         padding-left: 30px;
         width: auto
@@ -4085,16 +4095,14 @@ body.inquiry-page .scrollBar {
 
 .header__burger-menu-new {
     display: inline-block;
-    float: right;
-    position: absolute;
+     position: absolute;
     right: 0;
     top: 0
 }
 
 @media (max-width:1024px) {
     .header__burger-menu-new svg {
-        float: right;
-        height: 45px;
+             height: 45px;
         width: 45px
     }
 }
@@ -4104,8 +4112,7 @@ body.inquiry-page .scrollBar {
 }
 
 .header__burger-menu-new-cont {
-    float: right;
-    position: relative
+     position: relative
 }
 
 .header__bottom {
@@ -4293,8 +4300,7 @@ body.inquiry-page .scrollBar {
     border-radius: 0 20px 0 0;
     cursor: pointer;
     display: none;
-    float: right;
-    transition: all .3s linear
+     transition: all .3s linear
 }
 
 @media (min-width:1025px) {
@@ -4486,7 +4492,7 @@ body.inquiry-page .scrollBar {
     .header__menu-cont .primary li a .hover {
         -webkit-text-fill-color: transparent;
         background: #FF6201;
-        -webkit-background-clip: text;
+        
         display: block
     }
 }
@@ -5368,8 +5374,7 @@ html {
 .footer__menu a h3 span {
     -webkit-text-fill-color: unset;
     background: 0 0;
-    -webkit-background-clip: unset;
-    color: #fff;
+     color: #fff;
     display: block;
     padding: 15px 0;
     position: relative
@@ -5597,7 +5602,7 @@ html {
 .inner-masthead a:not(.btn) {
     -webkit-text-fill-color: transparent;
     background: #FF6201;
-    -webkit-background-clip: text;
+    
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
     display: block;
@@ -8102,8 +8107,7 @@ h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]) {
 }
 
 .wp-block-image .alignright {
-    float: right;
-    margin: .5em 0 .5em 1em
+     margin: .5em 0 .5em 1em
 }
 
 .wp-block-image .aligncenter {
@@ -8561,8 +8565,7 @@ ol.wp-block-latest-comments {
 }
 
 .wp-block-latest-posts__featured-image.alignright {
-    float: right;
-    margin-left: 1em
+     margin-left: 1em
 }
 
 .wp-block-latest-posts__featured-image.aligncenter {
@@ -9712,8 +9715,7 @@ p.has-text-align-right[style*="writing-mode:vertical-rl"] {
 
 .wp-block-post-template-is-layout-constrained>li>.alignright,
 .wp-block-post-template-is-layout-flow>li>.alignright {
-    float: right;
-    margin-inline-end: 0;
+     margin-inline-end: 0;
     margin-inline-start: 2em
 }
 
@@ -11642,8 +11644,7 @@ html :where(.is-position-sticky) {
 .hero-investment__content p:not(.hero-investment__content-second-title) strong {
     -webkit-text-fill-color: transparent;
     background: #0080BA;
-    -webkit-background-clip: text
-}
+ }
 
 .hero-investment__content p span {
     color: #404040;
@@ -11959,7 +11960,7 @@ html :where(.is-position-sticky) {
 .counter__cont h6 {
     -webkit-text-fill-color: transparent;
     background: #0080BA;
-    -webkit-background-clip: text;
+    
     background-clip: text;
     font-family: HelveticaNowDisplay, sans-serif;
     font-weight: 400;
@@ -12999,7 +13000,7 @@ span {
 .card__title-cont h2 strong {
     -webkit-text-fill-color: transparent;
     background: #0080BA;
-    -webkit-background-clip: text;
+    
     background-clip: text
 }
 
@@ -13010,7 +13011,7 @@ span {
 .active .card__title-cont h4 strong {
     -webkit-text-fill-color: transparent;
     background: #030510;
-    -webkit-background-clip: text;
+    
     background-clip: text
 }
 
@@ -13601,8 +13602,7 @@ html body a.card__btn.active {
 .testimonial__slider-content .testimonial__inner-content .author strong {
     -webkit-text-fill-color: transparent;
     background: #0080BA;
-    -webkit-background-clip: text
-}
+ }
 
 .testimonial .owl-item .testimonial__slider-img {
     -webkit-backdrop-filter: blur(2.5px);
@@ -14361,8 +14361,7 @@ html body a.card__btn.active {
     border: 1px solid #eee;
     border-radius: 5;
     border-radius: 40px;
-    float: right;
-    position: absolute;
+     position: absolute;
     right: 20px;
     top: -10px;
     transform: translateY(-50%)
@@ -14375,8 +14374,7 @@ html body a.card__btn.active {
 .recent-blog__btn {
     color: #030510 !important;
     display: none;
-    float: right;
-    font-size: 2.2rem;
+     font-size: 2.2rem;
     font-weight: 400;
     line-height: 3rem;
     margin-bottom: 0;
@@ -14450,7 +14448,7 @@ html body a.card__btn.active {
 .recent-blog .headline span {
     -webkit-text-fill-color: transparent;
     background: #0080BA;
-    -webkit-background-clip: text;
+    
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone
 }
@@ -14526,8 +14524,7 @@ html body a.card__btn.active {
 
 @media (min-width:768px) {
     .our-solution__content-left li {
-        float: right;
-        margin-bottom: 30px;
+             margin-bottom: 30px;
         padding-left: 38px
     }
 }
@@ -14593,8 +14590,7 @@ html body a.card__btn.active {
 }
 
 .our-solution__img {
-    float: right;
-    height: 100%;
+     height: 100%;
     margin-right: 30px;
     margin-top: 30px;
     object-fit: cover;
@@ -16177,7 +16173,6 @@ html body a.card__btn.active {
 .crickslab__inner-content p strong {
     -webkit-text-fill-color: transparent;
     background: #0080BA;
-    -webkit-background-clip: text;
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone
 }
@@ -16209,7 +16204,6 @@ html body a.card__btn.active {
 .crickslab__inner-content h6.headline strong {
     -webkit-text-fill-color: transparent;
     background: #0080BA;
-    -webkit-background-clip: text;
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone
 }
@@ -16274,7 +16268,6 @@ html body a.card__btn.active {
 .portfolio-reverse__inner-cont .headline strong {
     -webkit-text-fill-color: transparent;
     background: #0080BA;
-    -webkit-background-clip: text;
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone
 }
@@ -18193,8 +18186,7 @@ html body a.card__btn.active {
 }
 
 .journey__about-text {
-    float: right;
-    max-width: 358px;
+     max-width: 358px;
     padding-bottom: 3rem
 }
 
@@ -18902,7 +18894,6 @@ html body a.card__btn.active {
 .grow a:hover h4 span {
     -webkit-text-fill-color: transparent;
     background: #0080BA;
-    -webkit-background-clip: text;
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone
 }
@@ -19819,7 +19810,6 @@ body.inquiry-page .header__new-right .btn-cta {
 .inquiry h6.progress-txt {
     -webkit-text-fill-color: transparent;
     background: #0080BA;
-    -webkit-background-clip: text;
     display: inline-block;
     font-size: 1.4rem;
     font-weight: 600;
@@ -20940,7 +20930,6 @@ body.inquiry-page .header__new-right .btn-cta {
 .teams__inner p span {
     -webkit-text-fill-color: transparent;
     background: #0080BA;
-    -webkit-background-clip: text
 }
 
 .teams__img {
@@ -24265,7 +24254,6 @@ body.inquiry-page .header__new-right .btn-cta {
     -webkit-text-fill-color: transparent;
     background: linear-gradient(90deg, #005bff 1%, #0080BA);
     background: -webkit-linear-gradient(90deg, #005bff 1%, #0080BA);
-    -webkit-background-clip: text;
     font-size: 2rem;
     font-style: italic;
     line-height: 3rem;
@@ -24518,7 +24506,6 @@ body.inquiry-page .header__new-right .btn-cta {
     -webkit-text-fill-color: transparent;
     background: linear-gradient(90deg, #005bff 1%, #0080BA);
     background: -webkit-linear-gradient(90deg, #005bff 1%, #0080BA);
-    -webkit-background-clip: text;
     font-size: 3.8rem;
     line-height: 5rem
 }
@@ -24689,7 +24676,6 @@ body.inquiry-page .header__new-right .btn-cta {
 .product-listing__cont-text p.headline span.number {
     -webkit-text-fill-color: transparent;
     background: linear-gradient(90deg, #005bff 1%, #0080BA);
-    -webkit-background-clip: text;
     font-weight: 400
 }
 
@@ -24921,7 +24907,6 @@ body.inquiry-page .header__new-right .btn-cta {
 .expertise__slider-item-inner:hover .expertise__slider-item-text h6 {
     -webkit-text-fill-color: transparent;
     background: linear-gradient(90deg, #005bff 1%, #0080BA);
-    -webkit-background-clip: text
 }
 
 .expertise__slider-item-inner:hover .expertise__slider-item-text p {
@@ -26036,8 +26021,7 @@ body.inquiry-page .header__new-right .btn-cta {
 }
 
 .wp-site-blocks>.alignright {
-    float: right;
-    margin-left: 2em
+     margin-left: 2em
 }
 
 .wp-site-blocks>.aligncenter {
@@ -26104,8 +26088,7 @@ body.inquiry-page .header__new-right .btn-cta {
 }
 
 .is-layout-flow>.alignright {
-    float: right;
-    margin-inline-start: 2em;
+     margin-inline-start: 2em;
     margin-inline-end: 0
 }
 
@@ -26121,8 +26104,7 @@ body.inquiry-page .header__new-right .btn-cta {
 }
 
 .is-layout-constrained>.alignright {
-    float: right;
-    margin-inline-start: 2em;
+     margin-inline-start: 2em;
     margin-inline-end: 0
 }
 

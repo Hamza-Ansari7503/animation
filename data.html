@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Test</title>
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Basic scroll styles */
+        html, body {
+            height: 100%;
+            overflow-y: auto; /* Ensure vertical scrolling */
+            -webkit-overflow-scrolling: touch; /* Enable smooth scroll on iOS */
+        }
+
+        .content {
+            height: 200vh; /* Force scroll on page */
+            background: linear-gradient(to bottom, #ff0000, #0000ff);
+        }
+    </style>
+</head>
+<body>
+    <div class="content"></div>
+</body>
+</html>
